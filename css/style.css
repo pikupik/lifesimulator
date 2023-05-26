@@ -1,0 +1,229 @@
+* {
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  text-align: center;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: #FFC107;
+  color: black;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #999;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#game-container {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+#game-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  margin-bottom: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  color: #fff;
+  border-radius: 4px;
+}
+
+#game-info .info-item {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+#game-info .info-icon {
+  margin-right: 5px;
+}
+
+#game-info .info-label {
+  font-weight: bold;
+}
+
+#game-info .info-value {
+  width: 50px;
+  height: 10px;
+  background-color: #e74c3c;
+  margin-left: 5px;
+}
+
+#game-info .info-value.energy {
+  background-color: #e74c3c;
+}
+
+#game-info .info-value.cash {
+  background-color: #f1c40f;
+}
+
+#game-info .info-value + .info-value {
+  margin-left: 10px;
+}
+
+.notif {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  display: none;
+}
+
+#game-actions {
+  margin-bottom: 20px;
+}
+
+#game-messages {
+  margin-bottom: 20px;
+}
+
+#game-map {
+  margin-bottom: 20px;
+}
+
+.progress-container {
+  display: none;
+  position: fixed;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  width: 0%;
+  height: 100%;
+  background-color: blue;
+  transition: width 1s ease-in-out;
+}
+
+.progress-container span {
+  font-size: 14px;
+  position: absolute;
+  color: #f2f2f2;
+  font-weight: bold;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0;
+  text-align: center;
+  align-items: center;
+}
+
+.feature-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.feature-buttons button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.feature-buttons button:hover {
+  background-color: #45a049;
+}
+
+.inventory-container {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.inventory-container ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.inventory-container li {
+  margin-bottom: 10px;
+}
+
+.inventory-container button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: #ccc;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.inventory-container button:hover {
+  background-color: #999;
+}
+
+.marquee {
+  background-color: black;
+  height: 20px;
+  overflow: hidden;
+  position: relative;
+  color: white;
+}
+
+.marquee p {
+  position: absolute;
+  width: 100%;
+  font-weight: bold;
+  white-space: nowrap;
+  animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -100%;
+  }
+}

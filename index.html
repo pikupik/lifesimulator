@@ -1,0 +1,50 @@
+<!doctype html>
+<html> 
+ <head> 
+  <meta charset="utf-8"> 
+  <title>Simulasi Bisnis Game</title> 
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+ </head> 
+ <body> 
+  <div id="game-info"></div> 
+  <div id="game-actions"></div> 
+  <div id="game-messages"></div> 
+  <div id="game-map"></div> 
+  <div id="game-container"> 
+   <div id="game-info"> <!-- Informasi permainan, seperti nama pemain, uang, dan level --> 
+   </div> 
+   <div id="game-actions"> <!-- Tombol dan kontrol untuk melakukan aksi dalam permainan, seperti membeli barang atau mengelola karyawan --> 
+    <div id="game-actions"> <!-- Tambahkan elemen dengan ID "show-kantor-button" di sini --> 
+    </div> 
+    <div id="inventory" class="inventory-container" style="display: none;"> 
+     <h3>Inventory</h3> 
+     <ul> 
+      <li></li> 
+     </ul> <button onclick="toggleInventory()">Tutup</button> 
+    </div> 
+    <div id="game-map"> <!-- Di sini akan muncul gambar dan teks --> 
+     <div id="inventoryHouse" class="inventory-container" style="display: none;"> 
+      <h3>Inventory House</h3> 
+      <ul></ul> <button onclick="toggleInventoryHouse()">Tutup</button> 
+     </div> 
+     <div id="game-messages"> <!-- Kotak pesan atau notifikasi yang menampilkan informasi penting dalam permainan, seperti pemberitahuan kegagalan atau kesuksesan --> 
+     </div> 
+     <div class="progress-container"> 
+      <div class="progress-bar"></div> 
+     </div> 
+    </div> <!-- Tambahkan elemen tombol fitur --> <!-- ... --> 
+    <div id="game-container"> <!-- ... --> 
+     <div class="notif" id="notifContainer"></div> 
+     <div class="feature-buttons"> <button onclick="goToMap()">Map</button> <button onclick="goToMarket()">Exchange Market</button> 
+     </div> 
+    </div> <!-- ... --> 
+    <script src="script.js"></script> 
+   </div> 
+  </div> 
+  <div class="marquee"> 
+   <p id="marqueeText"></p> 
+  </div> 
+
+<script src="js/script.js"></script>
+</body>
+</html>
